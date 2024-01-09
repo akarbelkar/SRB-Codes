@@ -1,0 +1,24 @@
+Call:
+lm(formula = OD ~ DvhG.presence + Mutation * Induction, data = jhandu)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.122229 -0.056437 -0.009771  0.060896  0.157563 
+
+Coefficients:
+                          Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                0.75144    0.03430  21.905  < 2e-16 ***
+DvhG.presence             -0.36821    0.02287 -16.100  < 2e-16 ***
+Mutationb_K520E           -0.07233    0.04574  -1.581   0.1219    
+Mutationc_P567D           -0.09633    0.04574  -2.106   0.0417 *  
+Mutationd_R650E           -0.03100    0.04574  -0.678   0.5019    
+Induction                  0.25350    0.04574   5.542 2.24e-06 ***
+Mutationb_K520E:Induction -0.15917    0.06468  -2.461   0.0184 *  
+Mutationc_P567D:Induction -0.19617    0.06468  -3.033   0.0043 ** 
+Mutationd_R650E:Induction -0.02617    0.06468  -0.405   0.6880    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.07922 on 39 degrees of freedom
+Multiple R-squared:  0.9041,	Adjusted R-squared:  0.8844 
+F-statistic: 45.97 on 8 and 39 DF,  p-value: < 2.2e-16
