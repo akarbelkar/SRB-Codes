@@ -1,0 +1,19 @@
+Call:
+lm(formula = OD ~ Phosphate * Induction, data = Pi)
+
+Residuals:
+     Min       1Q   Median       3Q      Max 
+-0.11868 -0.02426  0.00380  0.05145  0.07829 
+
+Coefficients:
+                          Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                0.42113    0.04313   9.765 1.01e-05 ***
+Phosphatelow Pi           -0.25090    0.06099  -4.114  0.00337 ** 
+Induction                  0.55481    0.06099   9.097 1.71e-05 ***
+Phosphatelow Pi:Induction -0.43082    0.08625  -4.995  0.00106 ** 
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.0747 on 8 degrees of freedom
+Multiple R-squared:  0.9622,	Adjusted R-squared:  0.9481 
+F-statistic: 67.93 on 3 and 8 DF,  p-value: 4.934e-06

@@ -1,0 +1,20 @@
+Call:
+lm(formula = OD ~ xylose + Phosphate * Induction, data = RapA)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.045045 -0.012619 -0.003872  0.013460  0.073028 
+
+Coefficients: (1 not defined because of singularities)
+                           Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                 0.12506    0.01327   9.423 6.78e-07 ***
+xylose                     -0.05246    0.02167  -2.420   0.0323 *  
+PhosphateRapA OE                 NA         NA      NA       NA    
+Induction                   0.11095    0.01877   5.911 7.13e-05 ***
+PhosphateRapA OE:Induction -0.04117    0.03065  -1.343   0.2041    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.02968 on 12 degrees of freedom
+Multiple R-squared:  0.846,	Adjusted R-squared:  0.8076 
+F-statistic: 21.98 on 3 and 12 DF,  p-value: 3.638e-05

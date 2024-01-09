@@ -1,0 +1,19 @@
+Call:
+lm(formula = OD ~ Phosphate * Induction, data = RapA)
+
+Residuals:
+      Min        1Q    Median        3Q       Max 
+-0.079865 -0.027014 -0.004503  0.016889  0.098235 
+
+Coefficients:
+                                 Estimate Std. Error t value Pr(>|t|)    
+(Intercept)                       0.12506    0.02197   5.692 3.34e-05 ***
+PhosphateRapA inactive            0.09157    0.03107   2.947  0.00947 ** 
+Induction                         0.11095    0.03107   3.570  0.00255 ** 
+PhosphateRapA inactive:Induction  0.07999    0.04395   1.820  0.08750 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Residual standard error: 0.04913 on 16 degrees of freedom
+Multiple R-squared:  0.8437,	Adjusted R-squared:  0.8144 
+F-statistic: 28.79 on 3 and 16 DF,  p-value: 1.104e-06
